@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Printfinity · Catálogo 3D Navidad</title>
+<meta name="description" content="Adornos, nacimientos y regalos navideños impresos en 3D. Explora los catálogos de Printfinity por categoría y cotiza por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Printfinity">
+<meta property="og:title" content="Printfinity · Catálogo 3D Navidad">
+<meta property="og:description" content="Adornos, nacimientos y regalos navideños impresos en 3D. Mira los catálogos y cotiza por WhatsApp.">
+<meta property="og:image" content="assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A211B">
+<link rel="icon" href="assets/img/favicon.svg?v=2" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=16">
+</head>
+<body>
+<a class="skip" href="#catalogos">Saltar a los catálogos</a>
+
+<header class="site-header" id="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Printfinity, inicio">
+      <span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="14" y="26.5" width="4" height="3.5" rx=".8" fill="#B98A35"/><path fill="#3FB57F" d="M16 6 22 14h-2.5l5.5 7h-3.5l5.5 6.5H5l5.5-6.5H7l5.5-7H10Z"/><circle cx="14.200" cy="13.600" r="1.400" fill="#D8434A"/><circle cx="18.600" cy="18.800" r="1.500" fill="#E9B659"/><circle cx="12" cy="22.400" r="1.500" fill="#F1F5F0"/><circle cx="20.600" cy="24.300" r="1.400" fill="#D8434A"/><polygon fill="#F2B544" points="16,1.600 16.880,3.990 19.420,4.090 17.430,5.660 18.120,8.110 16,6.700 13.880,8.110 14.570,5.660 12.580,4.090 15.120,3.990"/></svg></span>
+      <span>Printfinity</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <canvas class="snow" id="snow" aria-hidden="true"></canvas>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span>Catálogo de Impresión 3D · Navidad 2026</p>
+        <h1>Tu Navidad, <em>impresa en 3D</em></h1>
+        <p class="lead">Explora los catálogos por categoría y elige el modelo perfecto para darle vida a tu Navidad.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#catalogos"><span id="hero-cta">Ver los catálogos</span>
+            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-ghost" id="hero-whatsapp" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        </div>
+        <ul class="facts">
+          <li><strong id="fact-count">8 catálogos</strong><span>por categorías</span></li>
+          <li><strong>Elige tu modelo</strong><span>hay para todos los gustos</span></li>
+          <li><strong>Personalizable</strong><span>en tamaño, color y nombres</span></li>
+        </ul>
+      </div>
+
+      <figure class="printer" id="printer">
+        <div class="printer-stage">
+          <svg viewBox="0 0 420 500" aria-hidden="true" focusable="false">
+            <defs>
+              <clipPath id="print-clip"><rect id="print-mask" x="0" y="440" width="420" height="0"/></clipPath>
+              <linearGradient id="bed" x1="0" x2="1"><stop offset="0" stop-color="#23594B"/><stop offset=".5" stop-color="#2F6F5E"/><stop offset="1" stop-color="#23594B"/></linearGradient>
+            </defs>
+            <!-- marco de la impresora -->
+            <rect x="15" y="20" width="4" height="440" rx="2" fill="#174036"/>
+            <rect x="401" y="20" width="4" height="440" rx="2" fill="#174036"/>
+            <rect x="15" y="17" width="390" height="6" rx="3" fill="#174036"/>
+            <!-- cama -->
+            <rect x="28" y="440" width="364" height="14" rx="5" fill="url(#bed)"/>
+            <rect x="40" y="454" width="340" height="9" rx="4.5" fill="#174036"/>
+            <!-- pieza impresa -->
+            <g clip-path="url(#print-clip)">
+              <path d="M210 66 L290 172 H250 L322 272 H274 L352 382 H68 L146 272 H98 L170 172 H130 Z" fill="url(#pf-layers-green)"/>
+              <rect x="186" y="382" width="48" height="58" fill="url(#pf-layers-gold)"/>
+              <circle class="orn" cx="178" cy="214" r="11" fill="url(#pf-layers-red)"/>
+              <circle class="orn" cx="246" cy="250" r="11" fill="url(#pf-layers-gold)"/>
+              <circle class="orn" cx="150" cy="330" r="12" fill="url(#pf-layers-snow)"/>
+              <circle class="orn" cx="268" cy="344" r="12" fill="url(#pf-layers-red)"/>
+              <circle class="orn" cx="214" cy="306" r="10" fill="url(#pf-layers-gold)"/>
+              <circle class="orn" cx="206" cy="146" r="9" fill="url(#pf-layers-snow)"/>
+            </g>
+            <!-- estrella final -->
+            <polygon class="tree-star" fill="#E9B659" points="210,18 218.2,38.7 240.4,40.1 223.3,54.3 228.8,75.9 210,64 191.2,75.9 196.7,54.3 179.6,40.1 201.8,38.7"/>
+            <!-- eje y cabezal -->
+            <rect class="gantry" id="gantry" x="19" y="400" width="382" height="4" rx="2" fill="#23594B"/>
+            <g class="nozzle" id="nozzle" transform="translate(210 440)">
+              <rect x="-17" y="-46" width="34" height="28" rx="6" fill="#C9D9D1"/>
+              <rect x="-11" y="-40" width="22" height="5" rx="2.5" fill="#0F2D25"/>
+              <polygon points="-7,-18 7,-18 2,-6 -2,-6" fill="#E9B659"/>
+              <circle cx="0" cy="-3" r="3" fill="#D8434A"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption class="status">
+          <span class="led"></span>
+          <span id="print-status">Calentando la impresora…</span>
+          <button class="replay" id="print-replay" type="button" aria-label="Volver a imprimir el árbol" title="Volver a imprimir" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.6-5.9M4 4v5h5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="bar" id="print-bar"></span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="catalogs" id="catalogos" aria-labelledby="catalogos-title">
+    <div class="garland" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Colección Navidad 2026</p>
+          <h2 id="catalogos-title">Categorías</h2>
+        </div>
+        <p class="count"><span class="pulse"></span><span id="category-count">8 Catálogos</span></p>
+      </div>
+      <ul class="tags" id="category-grid"></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-info">
+      <div class="info">
+        <p class="info-label">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16M6 4v15m12-15v15M3 20h18M9 9h6v3l-3 3-3-3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Materiales
+        </p>
+        <p>Los modelos son impresos con <strong>filamento PLA</strong>, cuidando cada detalle para lograr piezas con buen acabado y resistencia.</p>
+      </div>
+      <div class="info">
+        <p class="info-label green">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9m5 0h2M4 17h2m5 0h9M15.5 4.5v5M8.5 14.5v5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          Personalización
+        </p>
+        <p>Los modelos en su mayoría son adaptables en tamaño y color según lo deseado. También se puede agregar nombres, marcas, etc.</p>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>Printfinity • Impresiones 3D</span>
+      <p>© 2026 Printfinity. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site-config.js?v=4"></script>
+<script src="assets/js/categories.js?v=7"></script>
+<script src="assets/js/art.js?v=12"></script>
+<script src="assets/js/home.js?v=10"></script>
+</body>
+</html>
