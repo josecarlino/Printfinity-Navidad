@@ -324,7 +324,6 @@ h1, h2, h3, p { margin: 0; }
 .cat-intro { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: .9rem 2rem; }
 .cat-intro h1 { margin: 0 0 .4rem; font-family: var(--font-display); font-weight: 500; font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.1; letter-spacing: -.02em; text-wrap: balance; }
 .cat-intro h1 em { font-style: italic; font-weight: 400; color: var(--gold); }
-.cat-intro p { color: var(--snow-dim); font-size: var(--step-0); max-width: 60ch; }
 
 .viewer { padding-bottom: clamp(2.5rem, 5vw, 4rem); }
 .frame {
