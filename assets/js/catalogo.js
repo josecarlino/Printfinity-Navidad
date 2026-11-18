@@ -34,11 +34,7 @@
       '<div class="frame" style="aspect-ratio:' + aspect + '">' +
         '<div class="loading" id="loading"><span>Cargando catálogo…</span></div>' +
         '<iframe id="embed" loading="lazy" src="' + current.embedUrl + '" title="Catálogo de ' + current.name + ' en Canva" allowfullscreen allow="fullscreen"></iframe>' +
-      "</div>" +
-      (current.canvaLink
-        ? '<p class="credit"><a href="' + current.canvaLink + '" target="_blank" rel="noopener">Ver “Catálogo ' + current.name + "”</a>" +
-          (current.author ? " de " + current.author : "") + " en Canva</p>"
-        : "");
+      "</div>";
   } else {
     viewer =
       '<div class="frame is-empty">' +
