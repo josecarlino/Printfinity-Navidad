@@ -52,7 +52,7 @@
       '<div class="cat-intro">' +
         "<div>" +
           "<h1>Catálogo de <em>" + current.name + "</em></h1>" +
-          "<p>" + current.pageDescription + "</p>" +
+          (current.pageDescription ? "<p>" + current.pageDescription + "</p>" : "") +
         "</div>" +
         '<a class="back" href="index.html">' + PF.icons.back + "Página principal</a>" +
       "</div>" +

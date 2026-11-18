@@ -23,7 +23,7 @@ window.CATALOG_CATEGORIES = [
     art: "grinch",
     tone: "rojo",
     shortDescription: "Se robó la Navidad, pero te la devolvemos impresa en 3D.",
-    pageDescription: "Se robó la Navidad, pero te la devolvemos impresa en 3D: figuras y adornos del Grinch.",
+    pageDescription: "",
     image: null,
     imageAlt: "",
     embedUrl: "https://www.canva.com/design/DAHbOcXgYpc/0biN_E0m_wAJ1W6yWNXjyQ/view?embed",
