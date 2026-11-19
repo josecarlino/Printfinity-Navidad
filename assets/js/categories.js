@@ -64,8 +64,8 @@ window.CATALOG_CATEGORIES = [
     shortDescription: "No se derriten ni en pleno verano.",
     image: null,
     imageAlt: "",
-    embedUrl: null,
-    canvaLink: null,
+    embedUrl: "https://www.canva.com/design/DAHbVGNkqFs/jgGNVVLEVKzBvhSnT6UqtA/view?embed",
+    canvaLink: "https://www.canva.com/design/DAHbVGNkqFs/jgGNVVLEVKzBvhSnT6UqtA/view?utm_content=DAHbVGNkqFs&utm_campaign=designshare&utm_medium=embeds&utm_source=link",
     author: "José Carlos Lino",
     aspect: "16 / 9"
   },
@@ -77,8 +77,8 @@ window.CATALOG_CATEGORIES = [
     shortDescription: "Para presumirlos cada Navidad.",
     image: null,
     imageAlt: "",
-    embedUrl: null,
-    canvaLink: null,
+    embedUrl: "https://www.canva.com/design/DAHbVKAbn_A/qXDW6yG73LvKvJKNaRUkSw/view?embed",
+    canvaLink: "https://www.canva.com/design/DAHbVKAbn_A/qXDW6yG73LvKvJKNaRUkSw/view?utm_content=DAHbVKAbn_A&utm_campaign=designshare&utm_medium=embeds&utm_source=link",
     author: "José Carlos Lino",
     aspect: "16 / 9"
   },
