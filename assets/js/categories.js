@@ -38,8 +38,8 @@ window.CATALOG_CATEGORIES = [
     shortDescription: "Para los amantes de la Navidad y los gatos :3",
     image: null,
     imageAlt: "",
-    embedUrl: null,
-    canvaLink: null,
+    embedUrl: "https://www.canva.com/design/DAHbVNTHyU8/ikjM3XDdnPOGOglu4Dfqbw/view?embed",
+    canvaLink: "https://www.canva.com/design/DAHbVNTHyU8/ikjM3XDdnPOGOglu4Dfqbw/view?utm_content=DAHbVNTHyU8&utm_campaign=designshare&utm_medium=embeds&utm_source=link",
     author: "José Carlos Lino",
     aspect: "16 / 9"
   },
@@ -51,8 +51,8 @@ window.CATALOG_CATEGORIES = [
     shortDescription: "Variedad de modelos, no todos son verdes.",
     image: null,
     imageAlt: "",
-    embedUrl: null,
-    canvaLink: null,
+    embedUrl: "https://www.canva.com/design/DAHbVEYFJIw/7GI6QA-69MHQJCeS0pHqlQ/view?embed",
+    canvaLink: "https://www.canva.com/design/DAHbVEYFJIw/7GI6QA-69MHQJCeS0pHqlQ/view?utm_content=DAHbVEYFJIw&utm_campaign=designshare&utm_medium=embeds&utm_source=link",
     author: "José Carlos Lino",
     aspect: "16 / 9"
   },
