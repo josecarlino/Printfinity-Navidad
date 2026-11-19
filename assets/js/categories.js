@@ -90,8 +90,8 @@ window.CATALOG_CATEGORIES = [
     shortDescription: "Santa, renos y toda su compañía.",
     image: null,
     imageAlt: "",
-    embedUrl: null,
-    canvaLink: null,
+    embedUrl: "https://www.canva.com/design/DAHbVOSKU9A/Q818y6fuQH6bWD0COlv5mQ/view?embed",
+    canvaLink: "https://www.canva.com/design/DAHbVOSKU9A/Q818y6fuQH6bWD0COlv5mQ/view?utm_content=DAHbVOSKU9A&utm_campaign=designshare&utm_medium=embeds&utm_source=link",
     author: "José Carlos Lino",
     aspect: "16 / 9"
   },
@@ -103,8 +103,8 @@ window.CATALOG_CATEGORIES = [
     shortDescription: "Porque las luces de siempre quedan cortas.",
     image: null,
     imageAlt: "",
-    embedUrl: null,
-    canvaLink: null,
+    embedUrl: "https://www.canva.com/design/DAHbVHFSsuE/LTtvkPfZyZtuS7fOaWjDzQ/view?embed",
+    canvaLink: "https://www.canva.com/design/DAHbVHFSsuE/LTtvkPfZyZtuS7fOaWjDzQ/view?utm_content=DAHbVHFSsuE&utm_campaign=designshare&utm_medium=embeds&utm_source=link",
     author: "José Carlos Lino",
     aspect: "16 / 9"
   },
@@ -116,8 +116,8 @@ window.CATALOG_CATEGORIES = [
     shortDescription: "Horas y hasta días de impresión, minutos de asombro.",
     image: null,
     imageAlt: "",
-    embedUrl: null,
-    canvaLink: null,
+    embedUrl: "https://www.canva.com/design/DAHbVLnaX6s/NlGnyzpI7n7hkkYlQLTDZA/view?embed",
+    canvaLink: "https://www.canva.com/design/DAHbVLnaX6s/NlGnyzpI7n7hkkYlQLTDZA/view?utm_content=DAHbVLnaX6s&utm_campaign=designshare&utm_medium=embeds&utm_source=link",
     author: "José Carlos Lino",
     aspect: "16 / 9"
   }
