@@ -40,7 +40,7 @@
       '<div class="frame is-empty">' +
         '<div class="empty">' + PF.render(current) +
           "<strong>Este catálogo estará disponible próximamente</strong>" +
-          "<span>Mientras tanto, escríbenos y te enviamos fotos de las piezas de " + current.name.toLowerCase() + ".</span>" +
+          "<span>Mientras tanto, escríbenos y te enviamos fotos de las piezas de " + (/[A-Z]/.test(current.name.slice(1)) ? current.name : current.name.toLowerCase()) + ".</span>" +
         "</div>" +
       "</div>";
   }

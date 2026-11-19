@@ -15,6 +15,17 @@
     return pts.join(" ");
   }
 
+  // Un foco de la guirnalda: halo, casquillo y bombilla, girado sobre el cable.
+  function bulb(x, y, deg, color) {
+    var t = "translate(" + x + " " + y + ") rotate(" + deg + ") scale(1.25)";
+    return [
+      ["circle", { cx: 0, cy: 22, r: 15, transform: t, opacity: ".28", fill: color }],
+      ["path", { d: "M-8 8 C-13 18 -7 32 0 34 C7 32 13 18 8 8 Z", transform: t, fill: color }],
+      ["ellipse", { cx: -3.5, cy: 17, rx: 2, ry: 5, transform: t, fill: "shine" }],
+      ["rect", { x: -5, y: 0, width: 10, height: 9, rx: 2, transform: t, fill: "green" }]
+    ];
+  }
+
   // "main" = color del tono de la categoría; "bg" = fondo sólido (para recortes).
   var ART = {
     esfera: [
@@ -34,6 +45,68 @@
       ["circle", { cx: 60, cy: 66, r: 14, fill: "green" }],
       ["path", { d: "M62 58Q64 42 74 36M68 64Q78 56 84 46M70 72Q84 70 92 60", stroke: "green", w: 7 }],
       ["path", { d: "M52 74Q46 66 52 58", stroke: "green", w: 7 }]
+    ],
+    // Gato con gorro navideño.
+    gato: [
+      ["polygon", { points: "28,64 30,30 54,50", fill: "main" }],
+      ["polygon", { points: "34,56 35,40 46,50", fill: "red" }],
+      ["polygon", { points: "92,64 90,30 66,50", fill: "main" }],
+      ["ellipse", { cx: 60, cy: 76, rx: 36, ry: 30, fill: "main" }],
+      ["ellipse", { cx: 46, cy: 62, rx: 6, ry: 9, transform: "rotate(35 46 62)", fill: "shine" }],
+      ["path", { d: "M50 48 C54 26 76 12 98 18 C106 20 108 30 102 36 C92 30 84 36 82 48 Z", fill: "red" }],
+      ["circle", { cx: 102, cy: 36, r: 7, fill: "snow" }],
+      ["rect", { x: 44, y: 42, width: 46, height: 11, rx: 5.5, transform: "rotate(-10 67 47)", fill: "snow" }],
+      ["ellipse", { cx: 47, cy: 76, rx: 4, ry: 6, fill: "bg" }],
+      ["ellipse", { cx: 73, cy: 76, rx: 4, ry: 6, fill: "bg" }],
+      ["polygon", { points: "55,87 65,87 60,93", fill: "red" }],
+      ["path", { d: "M60 93 Q56 99 51 96 M60 93 Q64 99 69 96", stroke: "bg", w: 2.5 }],
+      ["path", { d: "M16 82 L38 85 M18 94 L38 91 M104 82 L82 85 M102 94 L82 91", stroke: "snow", w: 1.6 }]
+    ],
+    // Dos árboles: uno verde y otro blanco.
+    arboles: [
+      ["path", { d: "M46 16 L66 42 H57 L76 68 H64 L84 96 H8 L28 68 H16 L35 42 H26 Z", fill: "green" }],
+      ["rect", { x: 40, y: 96, width: 12, height: 12, fill: "gold" }],
+      ["polygon", { points: star(46, 14, 8, 3.4), fill: "gold" }],
+      ["circle", { cx: 40, cy: 56, r: 3.5, fill: "red" }],
+      ["circle", { cx: 56, cy: 80, r: 3.5, fill: "gold" }],
+      ["circle", { cx: 30, cy: 86, r: 3.5, fill: "red" }],
+      ["path", { d: "M92 44 L106 64 H99 L113 84 H105 L118 102 H66 L79 84 H71 L85 64 H78 Z", fill: "snow" }],
+      ["rect", { x: 88, y: 102, width: 8, height: 8, fill: "gold" }],
+      ["circle", { cx: 88, cy: 76, r: 3, fill: "red" }],
+      ["circle", { cx: 100, cy: 92, r: 3, fill: "green" }]
+    ],
+    // Reno con bufanda.
+    reno: [
+      ["path", { d: "M44 40 C38 26 36 18 28 8 M37 26 C30 24 24 26 18 20 M76 40 C82 26 84 18 92 8 M83 26 C90 24 96 26 102 20", stroke: "gold", w: 6 }],
+      ["ellipse", { cx: 32, cy: 54, rx: 13, ry: 6, transform: "rotate(-25 32 54)", fill: "brown" }],
+      ["ellipse", { cx: 88, cy: 54, rx: 13, ry: 6, transform: "rotate(25 88 54)", fill: "brown" }],
+      ["path", { d: "M60 36 C80 36 88 52 86 70 C84 90 74 104 60 104 C46 104 36 90 34 70 C32 52 40 36 60 36 Z", fill: "brown" }],
+      ["ellipse", { cx: 50, cy: 52, rx: 5, ry: 9, transform: "rotate(30 50 52)", fill: "shine" }],
+      ["ellipse", { cx: 60, cy: 88, rx: 17, ry: 13, fill: "gold" }],
+      ["ellipse", { cx: 60, cy: 83, rx: 7, ry: 5, fill: "bg" }],
+      ["circle", { cx: 49, cy: 66, r: 3.6, fill: "bg" }],
+      ["circle", { cx: 71, cy: 66, r: 3.6, fill: "bg" }],
+      ["path", { d: "M30 106 Q60 120 90 106 L92 116 Q60 130 28 116 Z", fill: "red" }]
+    ],
+    // Guirnalda de focos.
+    luces: [
+      ["path", { d: "M0 34 Q30 58 60 44 Q90 30 120 54", stroke: "green", w: 3 }]
+    ].concat(bulb(19, 45, -12, "red"), bulb(45, 49, 6, "gold"), bulb(78, 39, -6, "snow"), bulb(104, 44, 12, "red")),
+    // Impresora 3D terminando un castillo.
+    obra: [
+      ["rect", { x: 12, y: 14, width: 6, height: 92, rx: 2, fill: "green" }],
+      ["rect", { x: 102, y: 14, width: 6, height: 92, rx: 2, fill: "green" }],
+      ["rect", { x: 10, y: 10, width: 100, height: 7, rx: 3, fill: "green" }],
+      ["path", { d: "M30 100 V66 H37 V72 H44 V66 H51 V100 Z M69 100 V66 H76 V72 H83 V66 H90 V100 Z", fill: "main" }],
+      ["path", { d: "M48 100 V54 H54 V60 H60 V54 H66 V60 H72 V54 V100 Z", fill: "main" }],
+      ["rect", { x: 30, y: 74, width: 60, height: 5, fill: "shade" }],
+      ["path", { d: "M53 100 V88 a7 7 0 0 1 14 0 V100 Z", fill: "bg" }],
+      ["rect", { x: 6, y: 100, width: 108, height: 8, rx: 3, fill: "gold" }],
+      ["rect", { x: 18, y: 34, width: 84, height: 4, rx: 2, fill: "snow" }],
+      ["rect", { x: 52, y: 26, width: 16, height: 14, rx: 3, fill: "snow" }],
+      ["polygon", { points: "56,40 64,40 61,47 59,47", fill: "gold" }],
+      ["polygon", { points: star(96, 52, 7, 2.6, 4), fill: "gold" }],
+      ["polygon", { points: star(24, 48, 5, 1.9, 4), fill: "gold" }]
     ],
     arbol: [
       ["path", { d: "M60 10 L86 44 H73 L96 74 H80 L104 102 H16 L40 74 H24 L47 44 H34 Z", fill: "main" }],
@@ -109,8 +182,8 @@
   }
 
   // Patrones de capas compartidos por todas las ilustraciones de la página.
-  var COLORS = { red: "#D8434A", green: "#3FB57F", gold: "#E9B659", snow: "#F1F5F0" };
-  var SOLID = { red: ["#F26C70", "#AC2C36"], green: ["#66D6A0", "#288A5E"], gold: ["#F8D892", "#C48A2A"], snow: ["#FFFFFF", "#C5D3CB"] };
+  var COLORS = { red: "#D8434A", green: "#3FB57F", gold: "#E9B659", snow: "#F1F5F0", brown: "#A26F3E" };
+  var SOLID = { red: ["#F26C70", "#AC2C36"], green: ["#66D6A0", "#288A5E"], gold: ["#F8D892", "#C48A2A"], snow: ["#FFFFFF", "#C5D3CB"], brown: ["#C9925C", "#74481F"] };
   function defs() {
     var p = Object.keys(COLORS).map(function (k) {
       return '<pattern id="pf-layers-' + k + '" width="6" height="3.2" patternUnits="userSpaceOnUse">' +

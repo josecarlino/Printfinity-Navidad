@@ -42,7 +42,7 @@ Guarda la foto en `assets/img/` (JPG ~800 px) y en la categoría pon `image: "as
 
 ## Cambiar categorías
 
-Edita `name`, `shortDescription` y `slug`. Ilustraciones disponibles para `art`: `grinch`, `esfera`, `arbol`, `nacimiento`, `gorro`, `muneco`, `estrella`, `regalo`, `campana`. Tonos para `tone`: `rojo`, `verde`, `oro`, `nieve`.
+Edita `name`, `shortDescription` y `slug`. Ilustraciones disponibles para `art`: `grinch`, `gato`, `arboles`, `muneco`, `esfera`, `reno`, `luces`, `obra`, `arbol`, `nacimiento`, `gorro`, `estrella`, `regalo`, `campana`. Tonos para `tone`: `rojo`, `verde`, `oro`, `nieve`.
 
 ## Probar en local
 
